@@ -30,7 +30,7 @@ namespace BarleyBreak
                 //Console.WriteLine("Enter -2 to see history.\n");
                 //Console.WriteLine("Enter -3 to FlashBack.\n");
                 Console.WriteLine("Enter 0 to leave.\n");
-                OutPutMatrix(Iplayable);
+                OutPutMatrix();
                 if (Iplayable.IsFinished()) Console.WriteLine("You WIN!!!");
 
                 EnterFromUser = int.Parse(Console.ReadLine());
@@ -72,9 +72,9 @@ namespace BarleyBreak
         }
 
 
-        public void OutPutMatrix(Object FieldOfGame)
+        public void OutPutMatrix()
         {
-            IPlayable Iplayable = (IPlayable)FieldOfGame;
+    
 
             for (int i = 0; i < Iplayable.Side; i++)
             {
